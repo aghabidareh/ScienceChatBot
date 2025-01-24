@@ -17,7 +17,7 @@ def preprocess_all(input_folder, combined_file):
                 text = f.read()
             combined_text += preprocess(text) + "\n"
 
-    with open(combined_file, "a", encoding="utf-8") as f:
+    with open(combined_file, "w", encoding="utf-8") as f:
         f.write(combined_text)
 
 

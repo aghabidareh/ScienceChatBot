@@ -1,7 +1,6 @@
 import os
 from PyPDF2 import PdfReader
 
-
 def extract(input_folder, output_folder):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
